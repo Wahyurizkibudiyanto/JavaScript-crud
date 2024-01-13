@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
     <title>JavaScript CRUD</title>
 </head>
+
 <body>
     <h1>Todo List</h1>
-    <h4>Aplikasi Todo List dengan JavaScript</h4>
-    
+    <div class="container">
+        <div class="left">
+            <form id="form">
+                <label for="post">Tulis Catatan Anda di sini</label>
+                <br>
+                <textarea name="post" id="input" cols="30" rows="10"></textarea>
+                <br>
+                <div id="msg"></div>
+                <button type="submit">Simpan</button>
+            </form>
+        </div>
+        <div class="right">
+            <h3>Catatan Anda Di Sini</h3>
+            <div id="posts">
+                <!-- <div>
+                    <p>${data.text}</p>
+                    <span class="options">
+                        <i onclick="editPost(this)" class="fas fa-edit"></i>
+                        <i onclick="deletPost(this)" class="fas fa-trash-alt"></i>
+                    </span>
+                </div> -->
+                <!-- <div>
+                    <p>${data.text}</p>
+                    <span class="options">
+                        <i onclick="editPost(this)" class="fas fa-edit"></i>
+                        <i onclick="deletPost(this)" class="fas fa-trash-alt"></i>
+                    </span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
